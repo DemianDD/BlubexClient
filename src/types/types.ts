@@ -4,7 +4,8 @@ export interface IPlan{
     desc: string,
     price: number,
     salePrice?: number,
-    image_url: string
+    image_url: string,
+    viewes: number,
 }
 
 export interface ITypeAction<T> {

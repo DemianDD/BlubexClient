@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="flex min-h-screen pt-[50px] justify-start md:justify-center items-center w-full flex-col 2xl:pt-0 xl:pt-[100px]">
       <Starter/>
       <Instruction/>
       <Footer/>

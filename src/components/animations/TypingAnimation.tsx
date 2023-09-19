@@ -16,7 +16,7 @@ const TypingAnimation = (props: IProps) => {
       } else {
         clearInterval(typingInterval);
       }
-    }, 75);
+    }, 80);
 
     return () => {
       clearInterval(typingInterval);
@@ -24,7 +24,7 @@ const TypingAnimation = (props: IProps) => {
   }, [currentIndex]);
 
   return (
-    <div className="text-[45px] font-medium">
+    <div className="2xl:text-[45px] md:text-[40px] lg:text-[30px] sm:text-[25px] font-medium text-[20px] famiky terminal-font">
       {animatedText}
     </div>
   );

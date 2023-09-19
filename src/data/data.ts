@@ -6,6 +6,7 @@ export const plans: IPlan[] = [
     desc: "Simple single page web site to represents your main benefits",
     price: 13,
     image_url: "/images/simplesite_image.png",
+    viewes: 1043
   },
   {
     id: "Mmm-222-000",
@@ -13,6 +14,7 @@ export const plans: IPlan[] = [
     desc: "Improve your selling stats and make more customers with your own online-shop",
     price: 67,
     image_url: "/images/marketplace_image.png",
+    viewes: 3144
   },
   {
     id: "Lll-333-000",
@@ -20,6 +22,23 @@ export const plans: IPlan[] = [
     desc: "Keep in touch with your auditory anytime and anywhere",
     price: 26,
     image_url: "/images/personalblog_image.png",
+    viewes: 576
+  },
+  {
+    id: "DDD-444-000",
+    name: "Crypto",
+    desc: "study, analyze and share forecasts",
+    price: 85,
+    image_url: "/images/crypto.png",
+    viewes: 2389
+  },
+  {
+    id: "KKK-555-000",
+    name: "Wedding`s site",
+    desc: "Guests, memories and photos - all in one place",
+    price: 26,
+    image_url: "/images/wedding.png",
+    viewes: 182
   },
 ];
 

@@ -1,9 +1,11 @@
 import StarterButton from "../buttons/StarterButton";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 
 const InstructionGoogle = () => {
   const router = useNavigate();
+  const { t } = useTranslation();
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 h-full lg:h-[500px] w-full my-[80px] sm:my-[150px] gap-y-5 bg-white rounded-3xl sm:bg-transparent sm:p-0 p-5">
       <div className="flex justify-center items-center">
@@ -15,17 +17,17 @@ const InstructionGoogle = () => {
                 <div className="flex items-center justify-start">
                   {" "}
                   <div className="h-[18px] w-[18px] rounded-full bg-[#bf873e] mr-2" />{" "}
-                  Ukraine
+                  {t('Ukraine')}
                 </div>
                 <div className="flex items-center justify-start">
                   {" "}
                   <div className="h-[18px] w-[18px] rounded-full bg-[#5b75a0] mr-2" />{" "}
-                  Greece
+                  {t('Greece')}
                 </div>
                 <div className="flex items-center justify-start">
                   {" "}
                   <div className="h-[18px] w-[18px] rounded-full bg-[#9f4c4c] mr-2" />{" "}
-                  Poland
+                  {t('Poland')}
                 </div>
               </div>
             </div>
@@ -40,13 +42,13 @@ const InstructionGoogle = () => {
                 +$1,806
               </span>
               <span className="font-[300] text-base text-[#888a7e]">
-                Sales
+                {t('Sales')}
               </span>
             </div>
             <div className="bg-[#f3c24f] rounded-3xl col-span-2 flex justify-center items-center">
               <div className="font-medium mr-5 text-end text-lg">
-                <div className="lg:text-[50px] text-[35px]">+ 385</div> new
-                visits
+                <div className="lg:text-[50px] text-[35px]">+ 385</div> 
+                {t('new visits')}
               </div>
               <img src="/icons/chart.svg" className="lg:w-[100px] w-[75px]" />
             </div>
@@ -55,18 +57,15 @@ const InstructionGoogle = () => {
       </div>
       <div className="bg-white rounded-2xl sm:p-[35px] pt-5 flex flex-col">
         <div className="text-[#cacaca] text-xl font-[300] mb-5">
-          What we offer
+          {t('What we offer')}
         </div>
         <div className="text-[#232323] text-[40px] font-[500] mb-1">
-          Fully customized website for Google standards
+          {t('Fully customized website for Google standards')}
         </div>
         <div className="text-[#6a6a6a] text-base font-[300] flex-grow">
-          Your site will appear in the Google Search. We will additionally
-          connect Google Analytics and Google Tag Manager. 
+          {t('Your site will appear in the Google Search. We will additionally connect Google Analytics and Google Tag Manager.')}
           <p>
-            This will help you
-            with detailed analysis of your audience, their interactions and
-            overall profitability
+            {t('This will help you with detailed analysis of your audience, their interactions and overall profitability')}
           </p>
         </div>
         <div className="flex justify-center w-full mt-10 lg:flex-grow">

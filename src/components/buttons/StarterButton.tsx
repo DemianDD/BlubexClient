@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const StarterButton = () => {
+  const { t } = useTranslation();
   const router = useNavigate();
   return (
     <div className="w-full">
@@ -9,7 +11,7 @@ const StarterButton = () => {
         onClick={() => router("/plan")}
       >
         <img src="icons/shine.svg" className="mr-1" />
-        Build your site
+        {t('Build your site')}
       </button>
     </div>
   );

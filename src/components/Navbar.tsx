@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 export const navigations = [
   {
     href: "/plan",
-    title: "store",
-    icon: "/icons/store.svg",
+    title: "Build",
+    icon: "/icons/build.svg",
   },
 ];
 
@@ -12,7 +12,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <nav className="fixed top-3 flex justify-center w-full z-10">
-      <div className="py-2 px-5 flex flex-row items-center w-[250px] text-sm bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
+      <div className="py-2 px-5 flex flex-row items-center w-[250px] text-sm bg-white bg-opacity-5 backdrop-blur-md rounded-3xl">
         <div className="flex-1" onClick={() => navigate("/")}>
           <img src="icons/logo.png" className="w-[80px] cursor-pointer"/>
         </div>
